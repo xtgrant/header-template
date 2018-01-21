@@ -5,9 +5,9 @@ export default class App extends React.Component{
     render(){
         //html to render for base app
         return(
-          <div class="bar-container">
-            <div class="bar-top"><Header /></div>
-            <div class="bar-left"><NavMenu /></div>
+          <div className="bar-container">
+            <div className="bar-top"><Header /></div>
+            <div className="bar-left"><NavMenu /></div>
           </div>
         );
     }

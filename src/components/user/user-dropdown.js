@@ -1,24 +1,29 @@
 import React from 'react';
 
 export default class UserDropdown extends React.Component{
+
   actionClick(evt) {
-    let menu = document.querySelector('.user-container');
+    let menu = document.getElementById('user-container');
     menu.classList.toggle('expand');
   }
 
   render(){
-      //html to render for base header
+      //html to render for base user-dropdown
       return(
-        <div class="user-container">
-          <div class="user-action">
-            <div class="user-name">John Dow</div>
-            <div class="user-profile" onClick={this.actionClick}><div class="profile-image">_profile_img_</div></div>
+        <div id="user-container" className="user-container">
+          <div className="user-action">
+            <div className="user-name">John Doe</div>
+            <div className="user-profile" onClick={this.actionClick}>
+              <div className="profile-image"></div>
+              <div className="close-btn"></div>
+            </div>
+
           </div>
-          <div class="user-nav-list">
+          <div className="user-nav-list">
             <ul>
-              <li>PROFILE</li>
-              <li>SETTINGS</li>
-              <li>LOGOUT</li>
+              <li>Profile</li>
+              <li>Settings</li>
+              <li>Logout</li>
             </ul>
           </div>
         </div>
