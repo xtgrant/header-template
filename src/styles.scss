@@ -79,12 +79,13 @@ body{
       background: linear-gradient(to right, #303030 50%, rgba(255, 255, 255, 0) 50%);
       background-size: 200% 100%;
       background-position:right bottom;
+      border-left: 4px solid rgba(18, 114, 178, 0);
 
       .nav-icon{
         height:25px;
         width:25px;
         display: inline-block;
-        margin: 0 20px;
+        margin: 0 20px 0 16px;
       }
       .icon-home{
         background:url('/images/home.svg') 0 0 no-repeat;
@@ -101,6 +102,9 @@ body{
 
       &:hover{
         background-position:left bottom;
+      }
+      &.active{
+        border-left: 4px solid rgba(18, 114, 178, 1);
       }
     }
   }
