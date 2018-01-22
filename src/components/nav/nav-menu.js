@@ -13,9 +13,9 @@ export default class NavMenu extends React.Component{
         <div className="nav-container">
           <div className="nav-list">
             <ul>
-              <li className="nav-link"><div className="link-home"> <span>HOME</span></div></li>
-              <li className="nav-link"><div className="link-home"> <span>DASHBOARD</span></div></li>
-              <li className="nav-link"><div className="link-home"> <span>SERVICES</span></div></li>
+              <li className="nav-link"><span className="nav-icon icon-home"></span> HOME</li>
+              <li className="nav-link"><span className="nav-icon icon-dashboard"></span> DASHBOARD</li>
+              <li className="nav-link"><span className="nav-icon icon-services"></span> SERVICES</li>
             </ul>
           </div>
           <div className="nav-action">
